@@ -1,0 +1,254 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Predefine CSS */
+.half-width {
+    width: 50%;
+}
+.full-width {
+    width: 100%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+.pt {
+    padding-top: 30px;
+}
+.pb {
+    padding-bottom: 30px;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.dflex {
+	display: flex;
+	align-items: center;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* Main Css */
+.hide-desktop {
+    display: none;
+}
+.header-section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 0px;
+}
+.main-header {
+    justify-content: space-between;
+}
+.header-left ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.header-left ul li:first-child {
+    margin-left: 0px;
+}
+.header-left ul li a {
+    color: white;
+}
+.hero-section {
+	background-color: #2D25A0;
+	min-height: 500px;
+	padding-top: 70px;
+}
+.header-right a {
+	color: white;
+	background: #E02C6D;
+	padding: 8px 26px;
+	font-weight: 500;
+	border-radius: 5px;
+    border: none;
+}
+.btn {
+	color: white;
+	background: #E02C6D;
+	padding: 10px 26px;
+	font-weight: 500;
+	border-radius: 5px;
+    border: none;
+}
+.btn  a {
+    color: white;
+}
+.hero-section .right img {
+	max-width: 500px;
+}
+.hero-container {
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+}
+.hero-section .left h1 {
+	font-size: 45px;
+	color: white;
+	font-weight: 900;
+	line-height: 50px;
+}
+.blog-section {
+	padding: 70px 0px;
+}
+.single-blog-des h2 , .single-blog-des p {
+	margin: 0;
+}
+.blog-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 40px;
+}
+.single-blog {
+	padding: 18px;
+	border-radius:5px;
+	box-shadow:0 0 12px 1px #9690904f;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+}
+.single-blog-des {
+	padding: 10px 0px 20px 0px;
+}
+.single-blog-des h2 {
+	margin-bottom: 12px;
+}
+
+footer {
+    padding: 40px 0px;
+  }
+  .footer-logo img {
+    max-width: 300px;
+  }
+  .social ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: rgba(192, 192, 192, 0.502);
+    text-align: center;
+    border-radius: 30px;
+  }
+  .social li i {
+    color: black;
+    text-align: center;
+    line-height: 30px;
+  }
+  .footer-logo {
+	margin-bottom: 25px;
+}
+/* Responsive Css */
+
+
+@media only screen and (max-width: 778px) {
+    .blog-grid {
+        grid-template-columns: auto auto;
+    }
+    .half-width {
+        width: 100%;
+    }
+    .left {
+        float: inherit;
+    }
+    .right {
+        float: inherit;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+    .hide-desktop {
+        display: block;
+    }
+    .mobile-menu ul li {
+        display: block;
+        margin: 0;
+    }
+
+.icon i {
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+.mobile-menu {
+	position: absolute;
+	top: 0;
+	left: -50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: #000000b5;
+	width: 100%;
+	height: 100vh;
+	padding-top: 40px;
+}
+.mobile-menu-hide {
+    display: block;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    left: 50%;
+}
+.mobile-menu ul li {
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+.fa.fa-close {
+	color: white;
+	font-size: 26px;
+	position: absolute;
+	right: 25px;
+	top: 15px;
+	cursor: pointer;
+}
+.hero-container .right {
+	margin-top: 30px;
+}
+.hero-section .right img {
+	max-width: 310px;
+}
+.hero-container {
+	padding-bottom: 40px;
+}
+.footer-logo img {
+	max-width: 250px;
+}
+} 
+
+@media only screen and (max-width: 500px) {
+    .blog-grid {
+        grid-template-columns: auto;
+    }
+} 
