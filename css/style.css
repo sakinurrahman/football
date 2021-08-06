@@ -145,6 +145,9 @@ li {
 .single-blog-des h2 {
 	margin-bottom: 12px;
 }
+.faq-grid {
+	margin-top: 55px;
+}
 
 footer {
     padding: 40px 0px;
@@ -167,6 +170,44 @@ footer {
   }
   .footer-logo {
 	margin-bottom: 25px;
+}
+.faq-section {
+	padding: 40px 0px;
+}
+.faq-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+.description-box {
+	text-align: center;
+}
+.faq-single {
+	background: #00175F;
+	color: white;
+}
+.description-box {
+	padding: 22px 15px;
+}
+.faq-title {
+	margin: 0;
+}
+.description-box a {
+	width: 100%;
+	background: #ededed;
+	display: block;
+	padding: 10px 0px;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+}
+
+.description-box a:hover {
+	width: 100%;
+	background: #12a1e4;
+    color:white;
 }
 /* Responsive Css */
 
@@ -194,6 +235,9 @@ footer {
     .mobile-menu ul li {
         display: block;
         margin: 0;
+    }
+    .faq-grid {
+        grid-template-columns: auto auto;
     }
 
 .icon i {
@@ -236,19 +280,26 @@ footer {
 .hero-container .right {
 	margin-top: 30px;
 }
-.hero-section .right img {
-	max-width: 310px;
-}
+
 .hero-container {
 	padding-bottom: 40px;
 }
 .footer-logo img {
 	max-width: 250px;
 }
+.hero-section .left, .hero-section .right {
+	text-align: center;
+}
 } 
 
 @media only screen and (max-width: 500px) {
     .blog-grid {
         grid-template-columns: auto;
+    }
+    .faq-grid {
+        grid-template-columns:  auto;
+    }
+    .hero-section .right img {
+        max-width: 310px;
     }
 } 
